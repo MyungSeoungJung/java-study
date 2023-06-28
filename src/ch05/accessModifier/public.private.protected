@@ -1,0 +1,36 @@
+package ch05;
+
+class TestClass {  //앞에 아무것도 안 쓰면 default 접근제한                       ----------------------defult
+    //default 접근제한 : 패키지범위
+    void performTest(){
+        
+    }
+    
+    
+}
+//차량 정보
+public class Car {
+
+    //다른 클래스에서는 메서드로만 접근
+    //public 메서드                                                       ---------------------------public
+    //public 어디서든 (어떤 클래스에서도)접근 가능하다
+    public void StartEngine(){
+        BankAccount ac = new BankAccount();
+        //다른 클래스에서 접근 불가능한 메서드가 된다(private)                ----------------------------(private)
+        //ac.deduckFunds
+        //private 메서드
+        //클래스 만든 사람만 가져다 쓸라고
+
+
+
+
+/*
+        Animal animal = new Animal();
+        public void test(){
+            //protected 메서드는 다른 패키지에서 사용 못함                     -----------------------protected
+            animal.eat;
+
+ */
+    }
+}
+
